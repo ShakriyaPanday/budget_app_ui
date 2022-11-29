@@ -13,7 +13,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "Flutter Budget UI",
-      theme: ThemeData(primarySwatch: Colors.green),
+      theme: ThemeData(
+        primarySwatch: Colors.green,
+        primaryColor: Colors.green,
+      ),
       home: const HomeScreen(),
     );
   }
