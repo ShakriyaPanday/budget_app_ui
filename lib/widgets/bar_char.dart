@@ -43,7 +43,7 @@ class BarChart extends StatelessWidget {
           ],
         ),
         Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           crossAxisAlignment: CrossAxisAlignment.end,
           children: [
             Bar(
@@ -107,14 +107,15 @@ class Bar extends StatelessWidget {
       children: [
         Text(
           "\$${amountSpent.toStringAsFixed(2)}",
-          style: const TextStyle(fontWeight: FontWeight.w600),
+          style:
+              const TextStyle(fontWeight: FontWeight.w600, letterSpacing: -0.5),
         ),
         const SizedBox(
           height: 6.0,
         ),
         Container(
           height: barHeight,
-          width: 18.0,
+          width: 20.0,
           decoration: BoxDecoration(
             color: Theme.of(context).primaryColor,
             borderRadius: BorderRadius.circular(6.0),
