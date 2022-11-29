@@ -1,7 +1,6 @@
 import 'dart:math';
-
-import 'package:flutter_budget_ui/models/category_model.dart';
-import 'package:flutter_budget_ui/models/expense_model.dart';
+import 'package:budget_app_ui/models/category_model.dart';
+import 'package:budget_app_ui/models/expense_model.dart';
 
 final rand = Random();
 
