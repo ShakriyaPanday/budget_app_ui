@@ -32,14 +32,16 @@ class _HomeScreenState extends State<HomeScreen> {
             ],
           ),
           SliverList(
-            delegate:
-                SliverChildBuilderDelegate(((BuildContext context, int index) {
-              return Container(
-                margin: const EdgeInsets.all(10),
-                height: 100.0,
-                color: Colors.deepOrange,
-              );
-            }), childCount: 10),
+            delegate: SliverChildBuilderDelegate(
+              ((BuildContext context, int index) {
+                return Container(
+                  height: 100.0,
+                  margin: const EdgeInsets.all(10.0),
+                  color: Colors.deepPurple[300],
+                );
+              }),
+              childCount: 10,
+            ),
           ),
           const SliverFillRemaining(
             child: Center(child: Text("Budget app")),
