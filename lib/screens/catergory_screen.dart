@@ -20,8 +20,10 @@ class _CategoryScreenState extends State<CategoryScreen> {
         actions: [
           IconButton(
             onPressed: (() {}),
-            icon: const Icon(Icons.add),
-            iconSize: 30.0,
+            icon: const Icon(
+              Icons.add,
+              size: 30.0,
+            ),
           )
         ],
       ),
